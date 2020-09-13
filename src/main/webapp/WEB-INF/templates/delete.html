@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+
+<form th:action="@{/products/delete}" th:object="${product}" method="post">
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td><input type="text" th:field="*{id}"/> </td>
+        </tr>
+    </table>
+    <button type="submit">Delete</button>
+</form>
+
+</body>
+</html>
